@@ -1,0 +1,71 @@
+<div style="background-color: #f1f1f1; text-align: center; padding: 40px">
+  <img
+    src="b24de11b4d49399cc119d52cf40d128.jpg"
+    alt="原子小金刚"
+    width="80px"
+    height="80px"
+  />
+</div>
+
+<div
+  style="
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 15px;
+    line-height: 1.7;
+    font-family: 'Microsoft YaHei', sans-serif;
+    color: #666666;
+    font-weight: bold;
+  "
+>
+  <p>Hi，你好：</p>
+  <p>我是原子小金刚，欢迎访问我的主页</p>
+  <p>
+    现任中国某三甲医院骨科任副主任医师，擅长肩袖损伤、肩关节脱位、肱骨大结节撕脱骨折、膝关节前交叉韧带损伤、后交叉韧带损伤、半月板损伤、髌骨脱位、踝关节不稳及臀肌挛缩的关节镜微创治疗
+  </p>
+  <p>
+    现任中华医学会运动医学分会上肢学组青年委员、海南省运动医学委员会委员，获解现任职医院医疗成果一等奖2项，参与重点研发计划1项，国家自然科学基金重点支持项目1项，获国家发明专利1项、实用新型专利6项，主译专著1部，参译坎贝尔骨科手术学，第一作者发表SCI论文5篇以及各类其他文献共计31篇
+  </p>
+  <p>
+    如果你也和我一样，从事类似的工作、有相似的兴趣、受骨科疾病困扰，欢迎随时交流
+  </p>
+  <p>我们都在期待更好的自己</p>
+</div>
+
+<div
+  style="
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 40px;
+    font-size: 12px;
+    font-family: 'Microsoft YaHei', sans-serif;
+    color: #666666;
+    font-weight: bold;
+  "
+>
+  <p>联系作者：Mail：toyattan@gmail.com Wechat：CbeestraveBBBBB</p>
+  <p>教学及设计灵感源于：https://sl520987456.github.io/re0-02/</p>
+  <a href="https://sl520987456.github.io/re0-02/"> 作者主页</a>
+  <p class="datetime_display" id="datetimeDisplay">YYYY年M月D日 HH:MM</p>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      function updateDateTime() {
+        let now = new Date();
+        let year = now.getFullYear();
+        let month = now.getMonth() + 1;
+        let day = now.getDate();
+        let hours = now.getHours();
+        let minutes = now.getMinutes();
+        if (month < 10) month = "0" + month;
+        if (day < 10) day = "0" + day;
+        if (hours < 10) hours = "0" + hours;
+        if (minutes < 10) minutes = "0" + minutes;
+        document.getElementById(
+          "datetimeDisplay"
+        ).textContent = `${year}年${month}月${day}日 ${hours}:${minutes}`;
+      }
+      setInterval(updateDateTime, 1000); // Update every second
+      updateDateTime(); // Call immediately to set the initial value
+    });
+  </script>
+</div>
